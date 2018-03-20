@@ -14,10 +14,8 @@ import Html exposing (..)
 
 
 toInt : String -> Int
-toInt x =
-    x
-        |> String.toInt
-        |> Result.withDefault 0
+toInt =
+    String.toInt >> Result.withDefault 0
 
 
 main =
